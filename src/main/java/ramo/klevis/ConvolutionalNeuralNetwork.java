@@ -65,7 +65,7 @@ public class ConvolutionalNeuralNetwork implements NNObserver {
     }
 
     public int predict(LabeledImage labeledImage) {
-        double[] pixels = labeledImage.getPixels();
+        double[] pixels = labeledImage.getPIXELS();
         for (int i = 0; i < pixels.length; i++) {
             pixels[i] = pixels[i] / 255d;
         }

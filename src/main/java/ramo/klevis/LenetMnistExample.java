@@ -31,6 +31,7 @@ import java.util.Map;
  * @version 1.0
  * @since 9/16/15
  */
+
 public class LenetMnistExample {
     private static final Logger log = LoggerFactory.getLogger(LenetMnistExample.class);
     private static Configuration config = Configuration.getInstance();

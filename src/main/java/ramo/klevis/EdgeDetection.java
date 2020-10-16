@@ -23,15 +23,17 @@ public class EdgeDetection {
     private static final String INPUT_IMAGE = config.props.getProperty("INPUT_IMAGE");
     private static int count = 1;
 
-    private enum filterType {SOBEL, HORIZONTAL, VERTICAL}
-
+    private enum filterType {
+        SOBEL,
+        HORIZONTAL,
+        VERTICAL
+    }
     ;
 
     public static void main(String[] args) throws IOException {
         detectEdges(filterType.SOBEL);
         detectEdges(filterType.HORIZONTAL);
         detectEdges(filterType.VERTICAL);
-
     }
 
     private static void detectEdges(filterType filter) throws IOException {

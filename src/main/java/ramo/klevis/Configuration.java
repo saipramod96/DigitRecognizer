@@ -10,9 +10,9 @@ import java.util.Properties;
 
 /**
  * Singleton class that holds and loads the configuration files.
- * @author Klevis Ramo
+ * @author Alok Singh
  * @version 1.0
- * @since 11/24/2017
+ * @since 10/12/2020
  */
 
 public final class Configuration {

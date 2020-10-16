@@ -9,7 +9,6 @@ import org.apache.spark.sql.SparkSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
 import java.util.List;
 
 /**
@@ -91,7 +90,7 @@ public class NeuralNetwork {
     }
 
     public LabeledImage predict(final LabeledImage labeledImage) {
-        final double predict = model.predict(labeledImage.getFeatures());
+        final double predict = model.predict(labeledImage.getFEATURES());
         labeledImage.setLabel(predict);
         return labeledImage;
     }

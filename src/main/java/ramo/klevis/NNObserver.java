@@ -8,5 +8,4 @@ package ramo.klevis;
  */
 public interface NNObserver {
 	int update(LabeledImage labeledImage);
-
 }

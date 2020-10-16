@@ -22,7 +22,6 @@ public class DigitRecognizer {
 
     private final static Logger LOGGER = LoggerFactory.getLogger(DigitRecognizer.class);
     private static final Configuration config = Configuration.getInstance();
-    private static final JFrame mainFrame = new JFrame();
     private static final ConvolutionalNeuralNetwork convolutionalNeuralNetwork = ConvolutionalNeuralNetwork.getInstance();
 
     public static void main(String[] args) throws Exception {
@@ -37,7 +36,7 @@ public class DigitRecognizer {
         convolutionalNeuralNetwork.init();
         ui.attach(convolutionalNeuralNetwork);
         convolutionalNeuralNetwork.setSubject(ui);
-        mainFrame.setVisible(true);
+        ui.setVisible(true);
     }
 
     /* This method is only for Windows OS. */

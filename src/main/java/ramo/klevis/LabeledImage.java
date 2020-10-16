@@ -14,19 +14,19 @@ import java.io.Serializable;
  */
 
 public class LabeledImage implements Serializable {
-    private final double[] pixels;
+    private final double[] PIXELS;
     private double label;
-    private final Vector features;
+    private final Vector FEATURES;
 
     public LabeledImage(int label, double[] pixels) {
         double[] meanNormalizedPixel = meanNormalizeFeatures(pixels);
-        this.pixels = pixels;
-        features = Vectors.dense(meanNormalizedPixel);
+        this.PIXELS = pixels;
+        FEATURES = Vectors.dense(meanNormalizedPixel);
         this.label = label;
     }
 
-    public double[] getPixels() {
-        return pixels;
+    public double[] getPIXELS() {
+        return PIXELS;
     }
 
     private double[] meanNormalizeFeatures(double[] pixels) {
@@ -51,8 +51,8 @@ public class LabeledImage implements Serializable {
         return pixelsNorm;
     }
 
-    public Vector getFeatures() {
-        return features;
+    public Vector getFEATURES() {
+        return FEATURES;
     }
 
     public double getLabel() {
